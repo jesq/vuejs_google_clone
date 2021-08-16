@@ -21,27 +21,27 @@
       </nav>
     </header>
 
-    <section class="content-section">
+    <section class="middle-section">
       <div class="content-wrapper">
-        <img class="logo-img" src="@/assets/logo.jpg" alt="Google Logo" />
+        <img class="logo-img" src="@/assets/logo.jpg" alt="Google Logo"/>
         <div class="search-bar">
-          <fa icon="search"></fa>
-          <input class="search-input" type="text">
-          <fa icon="keyboard"></fa>
-          <fa icon="microphone"></fa>
+          <i><fa icon="search"></fa></i>
+          <input class="search-input" type="text" />
+          <i><fa icon="keyboard"></fa></i>
+          <i><fa icon="microphone"></fa></i>
         </div>
-      </div>
-      <div class="search-btns">
-        <button class="google-search-btn">Căutare Google</button>
-        <button class="lucky-search-btn">Mă simt norocos</button>
-      </div>
-      <div class="languages">
-        <p>
-          Google oferit în: 
-          <a href="">English</a>
-          <a href="">Magyar</a>
-          <a href="">Deutsch</a>
-        </p>
+        <div class="search-btns">
+          <button class="google-search-btn">Căutare Google</button>
+          <button class="lucky-search-btn">Mă simt norocos</button>
+        </div>
+        <div class="languages">
+          <p>
+            Google oferit în:
+            <a href="">English</a>
+            <a href="">Magyar</a>
+            <a href="">Deutsch</a>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -115,7 +115,6 @@ body {
 /* Header */
 
 header {
-  border: 1px solid red;
   height: 60px;
 }
 
@@ -146,15 +145,15 @@ header {
 }
 
 .navbar button {
-    border: 1px solid #4285f4;
-    font-weight: bold;
-    outline: none;
-    background: #4285f4;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-left: 4px;
-    cursor: pointer;
+  border: 1px solid #4285f4;
+  font-weight: bold;
+  outline: none;
+  background: #4285f4;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-left: 4px;
+  cursor: pointer;
 }
 
 .circle-shadow {
@@ -170,4 +169,101 @@ header {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Middle section */
+
+.middle-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.logo-img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  border:  1px solid lightgray;
+  width: 600px;
+  height: 45px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.search-bar:hover {
+  border: 1px solid #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05),
+                0 0 2px rgba(0, 0, 0, 0.05),
+                0 0 3px rgba(0, 0, 0, 0.05),
+                0 0 4px rgba(0, 0, 0, 0.05),
+                0 0 5px rgba(0, 0, 0, 0.05),
+                0 0 4px rgba(0, 0, 0, 0.05),
+                0 0 5px rgba(0, 0, 0, 0.05)
+}
+
+.search-bar i {
+  font-size: 18px;
+  color: gray;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  height: 30px;
+  margin-right: 15px;
+  font-size: 16px;
+  border: none;
+}
+
+.search-btns {
+  margin-top: 20px;
+}
+
+.search-btns button {
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  margin-left: 10px;
+  color: black;
+  background-color: #F2F3F4;
+}
+
+.search-btns button:hover {
+  border: 1px solid lightgray;
+}
+
+.google-search-btn {
+  width: 120px;
+}
+
+.lucky-search-btn {
+  width: 140px;
+}
+
+.languages {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.languages p a {
+  color: blue;
+  margin-left: 5px;
+}
+
+.languages p a:hover {
+  text-decoration: underline;
+}
 </style>
