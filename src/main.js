@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
-import { FontAwesomeIncon } from '@fortawesome/vue-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import App from './App.vue'
 
 library.add(fas)
-createApp(App).component('fa', FontAwesomeIncon).mount('#app')
+createApp(App)
+.component('fa', FontAwesomeIcon)
+.mount('#app')
