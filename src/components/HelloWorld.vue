@@ -42,6 +42,39 @@
         </p>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-content upper-footer">
+        <p>România</p>
+      </div>
+      <div class="footer-content lower-footer">
+        <ul class="lower-left-footer">
+          <li>
+            <a href="">Despre</a>
+          </li>
+          <li>
+            <a href="">Publicitate</a>
+          </li>
+          <li>
+            <a href="">Companii</a>
+          </li>
+          <li>
+            <a href="">Cum funcționează căutarea</a>
+          </li>
+        </ul>
+        <ul class="lower-right-footer">
+          <li>
+            <a href="">Confidențialitate</a>
+          </li>
+          <li>
+            <a href="">Termeni</a>
+          </li>
+          <li>
+            <a href="">Setări</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
 </template>
 
