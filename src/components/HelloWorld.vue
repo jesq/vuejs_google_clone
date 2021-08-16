@@ -105,7 +105,7 @@ a {
 /* Header */
 
 header {
-  height: 80px;
+  height: 60px;
 }
 
 .navbar {
@@ -175,7 +175,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
+  padding:60px;
+  padding-bottom:60px;
 }
 
 .logo-img {
@@ -316,5 +317,73 @@ footer {
     margin-left: 15px;
 }
 
+@media only screen and (max-width: 650px) {
+    /* Navbar */
+    .navbar ul {
+        font-size: 10px;
+    }
+
+    .menu-icon,
+    .user-icon span {
+        font-size: 14px;
+    }
+
+    .circle-shadow {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* Logo */
+    .logo-img {
+        width: 200px;
+    }
+
+    /* Search Bar */
+    .search-bar {
+        width: 90%;
+        height: 35px;
+    }
+
+    .search-bar i {
+        font-size: 14px;
+    }
+
+    /* Buttons */
+    .search-btns button {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .google-search-btn {
+        width: 100px;
+    }
+    
+    .lucky-search-btn {
+        width: 120px;
+    }
+
+    /* Language */
+    .languages {
+        font-size: 12px;
+    }
+
+    /* Footer */
+    footer {
+        height: 150px;
+    }
+
+    .upper-footer {
+        height: 50px;
+    }
+
+    .lower-footer {
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .lower-left-footer {
+        flex-wrap: wrap;
+    }
+}
 
 </style>
