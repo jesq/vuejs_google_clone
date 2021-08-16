@@ -10,7 +10,9 @@
             <a class="link" href="">Imagini</a>
           </li>
           <li>
-            <a href=""><fa class="menu-icon" icon="bars"></fa></a>
+            <div class="circle-shadow">
+              <a href=""><fa class="menu-icon" icon="bars"></fa></a>
+            </div>
           </li>
           <li>
             <button>Sign In</button>
@@ -88,4 +90,84 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+
+header {
+  border: 1px solid red;
+  height: 60px;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}
+
+.navbar ul li {
+  margin-left: 15px;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.navbar button {
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.circle-shadow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-shadow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+</style>
