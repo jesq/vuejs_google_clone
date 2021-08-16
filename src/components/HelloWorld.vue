@@ -1,5 +1,4 @@
 <template>
-  <div class="hello">
     <header>
       <nav class="navbar">
         <ul>
@@ -76,7 +75,6 @@
         </ul>
       </div>
     </footer>
-  </div>
 </template>
 
 <script>
@@ -89,7 +87,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 * {
   margin: 0;
   padding: 0;
@@ -168,6 +166,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .content-wrapper {
@@ -264,6 +263,9 @@ header {
 footer {
     background-color: #F2F2F2;
     height: 100px;
+    position:absolute;
+    bottom:0;
+    width:100%;
 }
 
 .footer-content {
