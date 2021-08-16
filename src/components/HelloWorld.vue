@@ -20,7 +20,6 @@
         </ul>
       </nav>
     </header>
-
     <section class="middle-section">
       <div class="content-wrapper">
         <img class="logo-img" src="@/assets/logo.jpg" alt="Google Logo"/>
@@ -105,17 +104,10 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-family: sans-serif;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 /* Header */
 
 header {
-  height: 60px;
+  height: 80px;
 }
 
 .navbar {
@@ -266,4 +258,61 @@ header {
 .languages p a:hover {
   text-decoration: underline;
 }
+
+/* Footer */
+
+footer {
+    background-color: #F2F2F2;
+    height: 100px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.upper-footer {
+    height: 50%;
+    border-bottom: 1px solid lightgray;
+}
+
+.upper-footer p {
+    color: gray;
+    font-size: 14px;
+}
+
+.lower-footer {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-footer ul li a {
+    font-size: 14px;
+    color: gray;
+}
+
+.lower-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.lower-left-footer {
+    display: flex;
+}
+
+.lower-left-footer li {
+    margin-right: 15px;
+}
+
+
+.lower-right-footer {
+    display: flex;
+}
+
+.lower-right-footer li {
+    margin-left: 15px;
+}
+
+
 </style>
